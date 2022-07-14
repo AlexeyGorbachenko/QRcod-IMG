@@ -1,0 +1,30 @@
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Генератор QR-коду</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="qrcode-with-logos.umd.min.js" defer></script>
+        <script src="index.js" defer></script>
+    </head>
+ <body>
+
+     <div id="root">
+        <h1 class="title">Генератор QR-коду</h1>
+        <form class="form">
+            <label>
+                <span>Вставить текст</span> 
+                <input type="text" name="text" placeholder="Вставить текст">
+        </label>
+        <label>
+            <span>Добавить логотип:</span>
+            <input type="file" name="logo">
+        </label>
+        <button type="submit">Сгенирировать</button>
+        </form>
+        <canvas id="canvas"></canvas>
+    </div>
+</body>
+</html>
